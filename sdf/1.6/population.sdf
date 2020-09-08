@@ -55,5 +55,6 @@
   <include filename="pose.sdf" required="0"/>
 
   <include filename="model.sdf" required="1"/>
+  <include filename="instanced_actor.sdf" required="1"/>
 
 </element> <!-- End Population -->

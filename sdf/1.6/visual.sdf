@@ -32,4 +32,21 @@
   <include filename="material.sdf" required="0"/>
   <include filename="geometry.sdf" required="1"/>
   <include filename="plugin.sdf" required="*"/>
+  <element name="animation" required="0">
+    <description>Animation file defines an animation for the skeleton in the skin. The skeleton must be compatible with the skin skeleton.</description>
+
+    <attribute name="name" type="string" default="__default__" required="1">
+      <description>Unique name for animation.</description>
+    </attribute>
+
+    <element name="filename" type="string" default="__default__" required="0">
+      <description>Path to animation file. Accepted formats: COLLADA, BVH.</description>
+    </element>
+    <element name="scale" type="double" default="1.0" required="0">
+      <description>Scale for the animation skeleton.</description>
+    </element>
+    <element name="interpolate_x" type="bool" default="false" required="0">
+      <description>Set to true so the animation is interpolated on X.</description>
+    </element>
+  </element> <!-- End Animation -->
 </element> <!-- End Visual -->
